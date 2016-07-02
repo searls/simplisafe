@@ -9,7 +9,7 @@ var simplisafe = require('simplisafe')
 simplisafe({ user: 'foo@bar.com', password: '123' }, function (er, client) {
   if (er) throw er
 
-  client.state // 'off' or 'home' or 'away'
+  client.info.state // 'off' or 'home' or 'away'
 
   client.setState('away', function (er) {})
 
