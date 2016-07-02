@@ -1,0 +1,41 @@
+{
+  "name": "simplisafe",
+  "version": "1.0.0",
+  "description": "A Node.js wrapper around the undocumented Simplisafe HTTP API",
+  "main": "lib/simplisafe.js",
+  "scripts": {
+    "test": "npm run test:unit && npm run style && npm run test:safe",
+    "test:unit": "teenytest --helper test/unit-helper.js lib/**/*.test.js",
+    "test:safe": "teenytest --helper test/safe-helper.js test/safe/**/*.js",
+    "style": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/searls/simplisafe.git"
+  },
+  "keywords": [
+    "simplisafe"
+  ],
+  "author": "Justin Searls <searls@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/searls/simplisafe/issues"
+  },
+  "homepage": "https://github.com/searls/simplisafe#readme",
+  "devDependencies": {
+    "core-assert": "^0.2.0",
+    "dotenv": "^2.0.0",
+    "standard": "^7.1.2",
+    "teenytest": "^5.0.1",
+    "testdouble": "^1.4.3"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "standard": {
+    "globals": [
+      "td",
+      "assert"
+    ]
+  }
+}
