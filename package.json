@@ -30,7 +30,8 @@
     "testdouble": "^1.4.3"
   },
   "dependencies": {
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "request": "^2.72.0"
   },
   "standard": {
     "globals": [
