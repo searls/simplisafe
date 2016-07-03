@@ -13,7 +13,7 @@ module.exports = {
           'Unexpected state: ' + client.info.state)
 
       if (process.env['CONTINUOUS_INTEGRATION']) {
-        return done(null) // Don't want Travis turning my house alarm on/off.
+        return done(null) // Don't want Travis CI to send cops to my house.
       }
 
       client.setState('home', function (er) {
