@@ -11,11 +11,14 @@ simplisafe({ user: 'foo@bar.com', password: '123' }, function (er, client) {
 
   client.info.state // 'off' or 'home' or 'away'
 
-  client.setState('away', function (er) {})
+  client.setState('away', function (er) {}) // this is really slow. Like 10-to-20 seconds slow
 
   client.logout(function (er) {}) // Log out, clean out the connection
 })
 ```
+
+This module was made possible by [the API sniffing](http://www.leftovercode.info/simplisafe.php)
+done by [@greencoder](https://github.com/greencoder)—thanks!
 
 ## limitations
 
