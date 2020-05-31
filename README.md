@@ -1,3 +1,5 @@
+**Simplisafe has updated or replaced the backend API used by their apps, and as a result this package no longer works. Check out [simplisafe-ss3-nodejs](https://github.com/chowielin/simplisafe-ss3-nodejs) instead**
+
 # simplisafe
 
 Wraps the (undocumented!) HTTP API used by the Simplisafe iOS application,
